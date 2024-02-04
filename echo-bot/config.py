@@ -1,7 +1,7 @@
 import sys
 import json
 path ="config/config.json"
-print(sys.argv[0])
+
 
 with open(path,"r") as stream:
     config=json.load(stream)
