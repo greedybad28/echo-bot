@@ -5,7 +5,5 @@ import asyncio
 import config
 from config import BOT_TOKEN,DB_PATH,ADMINS
 
-
-
-print(config.BOT_TOKEN)
+print(BOT_TOKEN)
 

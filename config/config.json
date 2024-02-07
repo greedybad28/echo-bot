@@ -1,6 +1,11 @@
 {
-    "bot_token" : "1899643267:AAFPYvCRGURRUG_eDPjAvyWPCCiVkhiLJss",
-    "db_path" : "database/database.db",
+    "bot_token" : "1899643267:AAFPYvCRGURRUG_eDPjAvyWPCCiVkhiLJss"
+    
+}
+{
+    "db_path" : "database/database.db"
+    
+}
+{
     "admins" : [662719942]
 }
-
