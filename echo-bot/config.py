@@ -2,15 +2,21 @@ import sys
 import json
 path ="config/config.json"
 
+# doing it the function way 
 
-with open(path,"r") as stream:
-    config=json.load(stream)
+def load_json(path):
+    with open(path,"r") as config_file:
+        config =json.load(config_file) 
+        return config
 
-print(config)
+
+
+config = load_json(path)
+
 BOT_TOKEN = config["bot_token"]
 DB_PATH = config["db_path"]
 ADMINS = config["admins"]
 
-print(BOT_TOKEN,DB_PATH,ADMINS)
+print(f"BOT TOKEN = {BOT_TOKEN}\nDATABASE PATH = {DB_PATH}")
 
 ## LATER INCLUDE except filenotfound error...
