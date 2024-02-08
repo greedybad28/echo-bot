@@ -17,6 +17,5 @@ BOT_TOKEN = config["bot_token"]
 DB_PATH = config["db_path"]
 ADMINS = config["admins"]
 
-print(f"BOT TOKEN = {BOT_TOKEN}\nDATABASE PATH = {DB_PATH}")
 
 ## LATER INCLUDE except filenotfound error...
