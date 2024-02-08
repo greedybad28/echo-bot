@@ -11,7 +11,7 @@ async def start_command(update: Update, context:ContextTypes.DEFAULT_TYPE):
 
     await update.message.reply_text("Hello, Thanks for texting me, I'm banannaaaa")
 
-async def help_command(update: Update, context:Contexttypes.DEFAULT_TYPE):
+async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("I'm a banana who can help yoyyy!!!")
 
 async def custom_command(update: Update, context:ContextTypes.DEFAULT_TYPE):
@@ -30,11 +30,12 @@ def handle_responses(text:str) -> str:
     if "I'm Akshay" in text:
         return "Fuck off bastard"
     
-async def handle_message(update: Update, ContextTypes.DEFAULT_TYPE):
-    message_type: str = update.message.chat.type
-    text: str = update.message.text
+async def handle_message(update: Update,context: ContextTypes.DEFAULT_TYPE):
+        message_type: str = update.message.chat.type
+        text: str = update.message.text
 
-    print(f"User ({update.message.chat.id}) in {message_type}: '{text}'")
+        print(f"User ({update.message.chat.id}) in {message_type}: '{text}'")
 
-    if message_type == "group":
-        if BOT_USERNAME
+        if message_type == "group":
+            if BOT_USERNAME in text:
+                new_text: str = text.replace(BOT_USERNAME)
