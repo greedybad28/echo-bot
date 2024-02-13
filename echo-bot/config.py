@@ -1,6 +1,6 @@
 import sys
 import json
-path ="config/config.json"
+path ="config.json"
 
 # doing it the function way 
 
@@ -15,7 +15,6 @@ config = load_json(path)
 
 BOT_TOKEN = config["bot_token"]
 DB_PATH = config["db_path"]
-ADMINS = config["admins"]
 
 
-## LATER INCLUDE except filenotfound error...
+# ## LATER INCLUDE except filenotfound error...
